@@ -1163,3 +1163,146 @@
          animation: none !important
      }
  }
+
+ 
+/* ===== WHY CRAVEORA SECTION ===== */
+.why-section {
+    padding: 48px 0 58px;
+    background: #fff;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.why-card {
+    background: #fffaf3;
+    border: 1px solid #eee5da;
+    border-radius: 18px;
+    padding: 25px;
+    transition: 0.25s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px #4b2d1010;
+}
+
+.why-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 15px;
+    background: #ffead8;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 17px;
+}
+
+.why-card h3 {
+    font-size: 1.08rem;
+    margin-bottom: 9px;
+}
+
+.why-card p {
+    color: #77736d;
+    font-size: 0.91rem;
+    line-height: 1.7;
+}
+
+/* ===== FAQ SECTION ===== */
+.faq-section {
+    padding: 55px 0 65px;
+}
+
+.faq-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.faq-intro p {
+    color: #77736d;
+    line-height: 1.8;
+    margin-top: 13px;
+}
+
+.faq-list {
+    display: grid;
+    gap: 11px;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #eee5da;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    background: transparent;
+    padding: 18px 20px;
+    font-weight: 800;
+    color: #20201e;
+    cursor: pointer;
+}
+
+.faq-question span:last-child {
+    font-size: 1.35rem;
+    color: #f47721;
+    transition: transform 0.2s;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 20px 18px;
+    color: #77736d;
+    font-size: 0.92rem;
+    line-height: 1.75;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+}
+
+.faq-item.open .faq-question span:last-child {
+    transform: rotate(45deg);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 850px) {
+    .faq-layout {
+        gap: 25px;
+    }
+
+    .why-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 620px) {
+    .why-section,
+    .faq-section {
+        padding: 38px 0;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}

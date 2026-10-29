@@ -31,3 +31,17 @@ document.getElementById("menuToggle").onclick = () => document.getElementById("n
 document.querySelectorAll("#navlinks a").forEach(a => a.addEventListener("click", () => document.getElementById("navlinks").classList.remove("open")));
 document.addEventListener("keydown", e => { if (e.key === "Escape") { closeCart(); checkoutModal.classList.remove("show"); document.body.style.overflow = "" } });
 renderProducts(); renderCart();
+
+document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        const isOpen = item.classList.contains("open");
+
+        item.classList.toggle("open", !isOpen);
+
+        button.setAttribute(
+            "aria-expanded",
+            String(!isOpen)
+        );
+    });
+});
