@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craveora — Good Food. Great Mood.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <a href="#" class="brand">crave<span>ora.</span></a>
+      <nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#about">Our
+          Story</a><a href="#reviews">Reviews</a></nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="cartOpen" aria-label="Open cart">🛒<span class="cart-count"
+            id="cartCount">0</span></button>
+        <a class="primary nav-order" href="#menu">Order now ↗</a>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div><span class="eyebrow">✦ FRESHLY MADE, ALWAYS</span>
+          <h1>Good food.<br><em>Great mood.</em></h1>
+          <p>Big flavours, fresh ingredients, and the kind of food that turns an ordinary day into something delicious.
+          </p>
+          <div class="hero-buttons"><a class="primary" href="#menu">Explore our menu&nbsp; →</a><a class="secondary"
+              href="#about">Our story</a></div>
+          <div class="trust">
+            <div class="avatars"><span>😊</span><span>😋</span><span>🤩</span></div>
+            <div>
+              <div class="stars">★★★★★</div>
+              <div>Loved by foodies, made with care</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-circle"></div><img class="hero-img"
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85"
+            alt="Juicy burger with fresh lettuce and tomato">
+          <div class="float-card float-one">🔥 Crowd favourite<small>Smash Burger</small></div>
+          <div class="float-card float-two">⭐ 4.9 / 5<small>Made for cravings</small></div>
+        </div>
+      </div>
+    </section>
+    <section class="perks">
+      <div class="wrap perks-grid">
+        <div class="perk">
+          <div class="perk-icon">🥬</div>
+          <div><strong>Fresh ingredients</strong><small>Quality you can taste</small></div>
+        </div>
+        <div class="perk">
+          <div class="perk-icon">⚡</div>
+          <div><strong>Quick & easy</strong><small>Simple ordering, less waiting</small></div>
+        </div>
+        <div class="perk">
+          <div class="perk-icon">❤️</div>
+          <div><strong>Made with love</strong><small>Every bite, worth it</small></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="menu">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="kicker">THE GOOD STUFF</div>
+            <h2>Find your craving.</h2>
+            <p class="section-sub">Fresh favourites for every kind of appetite.</p>
+          </div>
+          <div class="searchbox">⌕ <input id="searchInput" type="search" placeholder="Search your favourite..."
+              aria-label="Search menu"></div>
+        </div>
+        <div class="categories" id="categories">
+          <button class="cat-btn active" data-cat="All">✨ All items</button><button class="cat-btn"
+            data-cat="Burgers">🍔 Burgers</button><button class="cat-btn" data-cat="Pizza">🍕 Pizza</button><button
+            class="cat-btn" data-cat="Sides">🍟 Sides</button><button class="cat-btn" data-cat="Drinks">🥤
+            Drinks</button><button class="cat-btn" data-cat="Desserts">🍰 Desserts</button>
+        </div>
+        <div class="products" id="products"></div>
+      </div>
+    </section>
+    <section class="promo">
+      <div class="wrap">
+        <div class="promo-box">
+          <div>
+            <div class="kicker">A LITTLE EXTRA JOY</div>
+            <h2>Your next favourite meal is waiting.</h2>
+            <p>Build your perfect order, add a little treat, and make today delicious.</p>
+          </div><a class="primary" href="#menu">Let's order&nbsp; →</a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <img class="about-image"
+          src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=85"
+          alt="Warm and welcoming restaurant dining space">
+        <div>
+          <div class="kicker">A TASTE OF HAPPINESS</div>
+          <h2>Food brings us together.</h2>
+          <p class="section-sub">At Craveora, we believe good food is more than a meal. It's a catch-up with friends, a
+            family favourite, a late-night treat, and all the little moments in between.</p>
+          <p class="section-sub">We keep things fresh, flavours bold, and every visit full of good vibes.</p>
+          <div class="about-points">
+            <div class="about-point"><strong>100%</strong><small>Big flavour energy</small></div>
+            <div class="about-point"><strong>Made fresh</strong><small>Every single order</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="review" id="reviews">
+      <div class="wrap review-inner">
+        <div class="stars">★★★★★</div>
+        <div class="quote">“That first bite when everything is just right? Yeah, that's the Craveora feeling.”</div>
+        <div class="review-person">A happy foodie<small>Verified taste tester 😋</small></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="#" class="brand">crave<span>ora.</span></a>
+          <p>Good food, great mood. Bringing fresh flavours and happy moments to your table.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4><a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#about">Our Story</a><a
+            href="#reviews">Reviews</a>
+        </div>
+        <div class="footer-col">
+          <h4>Say hello</h4>
+          <p>📍 Karachi, Pakistan</p>
+          <p>🕒 Daily · 12 PM – 12 AM</p><a href="mailto:hello@craveora.example">hello@craveora.example</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get the good stuff</h4>
+          <p>Menu news and tasty updates. No spam, promise.</p>
+          <form class="newsletter" id="newsletter"><input type="email" id="newsletterEmail"
+              placeholder="Your email address" required aria-label="Your email address"><button type="submit"
+              aria-label="Subscribe">→</button></form>
+        </div>
+      </div>
+      <div class="copyright"><span>© 2026 Craveora. Made for food lovers.</span><span>Fresh bites. Happy vibes. ✨</span>
+      </div>
+    </div>
+  </footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h2>Your basket 🛒</h2><button class="close" id="cartClose" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter"></div>
+  </aside>
+  <div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 id="checkoutTitle">Let's get it to you.</h2><button class="close" id="checkoutClose"
+          aria-label="Close checkout">×</button>
+      </div>
+      <form id="checkoutForm">
+        <div class="form-row"><label for="customerName">Full name</label><input id="customerName" required
+            placeholder="Your name"></div>
+        <div class="form-row"><label for="customerPhone">Phone number</label><input id="customerPhone" required
+            type="tel" placeholder="03XX XXXXXXX" pattern="[0-9+() -]{7,18}"></div>
+        <div class="form-row"><label for="customerAddress">Delivery address</label><textarea id="customerAddress"
+            required rows="3" placeholder="House, street, area, city"></textarea></div>
+        <div class="form-row"><label for="payment">Payment method</label><select id="payment" required>
+            <option value="">Choose payment method</option>
+            <option>Cash on delivery</option>
+            <option>Bank transfer (confirm separately)</option>
+          </select></div>
+        <p class="form-note">Demo checkout: this form does not process payments or send your order to a restaurant.
+          Connect a backend or WhatsApp ordering to take real orders.</p><button class="primary checkout"
+          type="submit">Place demo order · <span id="checkoutTotal">Rs 0</span></button>
+      </form>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
